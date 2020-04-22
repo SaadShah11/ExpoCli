@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello Saad Here!</Text>
+      <View>
+        <TextInput placeholder="Enter Task" style={styles.button}/>
+        <Button title="Add"/>
+      </View>
+      <View>
+        
+      </View>  
     </View>
   );
 }
@@ -16,4 +22,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button: {
+    padding: 20
+  }
 });
